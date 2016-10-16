@@ -10,7 +10,9 @@
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Google Fonts - Ubuntu -->
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i" rel="stylesheet">		
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">		
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,7 +22,7 @@
 	<![endif]-->
 
 	<!-- Custom styles for this template -->
-	<link href="css/carousel.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
 
@@ -68,19 +70,59 @@
 		</div>
 	</div>
 
-	<!-- Message -->
-	<div class="index-message intro">
+	<!-- Intro -->
+	<section class="index-message intro">
 		<div class="container">
-			
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<p>El diseño debe ser como un cuento. A través de sus formas, imágenes, colores y palabras, se debe narrar una historia, una experiencia que cautive al público y los lleve a ese mundo especial que es TU MARCA.</p>
+				</div>
+			</div>
 		</div>
-	</div>
+	</section>
+
+	<!-- Projects -->
+	<section class="projects">
+		<div class="container">
+			<div class="row">
+				<!-- Carousel -->
+				<div id="myProjects" class="projects slide" data-ride="carousel">
+					<div class="col-xs-4">
+						<!-- Controls -->
+						<ol class="projects-indicators">
+							<li data-target="#myProjects" data-slide-to="0" class="active"></li>
+							<li data-target="#myProjects" data-slide-to="1"></li>
+							<li data-target="#myProjects" data-slide-to="2"></li>
+						</ol>
+					</div>
+					<div class="col-xs-8">
+						<!-- Slider -->
+						<div class="projects-inner" role="listbox">
+							<div class="item active">
+								<img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+								Slide1
+							</div>
+							<div class="item">
+								<img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+								Slide2
+							</div>
+							<div class="item">
+								<img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+								Slide3
+							</div>
+						</div>				
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<!-- Message -->
-	<div class="index-message phrases">
+	<section class="index-message phrases">
 		<div class="container">
 			
 		</div>
-	</div>
+	</section>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
