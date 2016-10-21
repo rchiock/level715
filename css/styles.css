@@ -12,11 +12,11 @@ section { width: 100%; padding: 80px 0; }
 
 /* CAROUSEL
 -------------------------------------------------- */
-.carousel {	height: 480px; }
-.site-title { display: block; position: absolute; top: 0; width: 100%; padding-top: 200px; text-align: center; z-index:15; }
-.carousel-caption {	right: 10%; left: 10%; text-align: left; z-index: 10; }
-.carousel .item { height: 480px; background-color: #777; }
-.carousel-inner > .item > img {	position: absolute; top: 0; left: 0; min-width: 100%; height: 480px; }
+.cover { height: 480px; }
+.site-title { display: block; position: absolute; top: 0; width: 100%; padding-top: 200px; text-align: center; z-index: 15; }
+.cover-inner .item { height: 480px; background-color: #777; }
+.cover-inner .cover-caption { text-align: left; color: #ffffff; z-index: 10; }
+.cover-inner > .item > img { position: absolute; top: 0; left: 0; min-width: 100%; height: 480px; }
 
 
 /* INDEX MESSAGE
@@ -29,7 +29,9 @@ section { width: 100%; padding: 80px 0; }
 
 /* INDEX PROJECTS
 -------------------------------------------------- */
-.projects {	height: 480px; }
+.projects {	background: #cccccc; padding: 0; }
+.projects-indicators { position: relative; top: 0; }
+.projects-indicators li { display: block; }
 .projects-indicators .active { background-color: #ffffff; width: 12px; height: 12px; margin: 0; }
 
 
