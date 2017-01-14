@@ -1,39 +1,70 @@
 /* PAGE STYLES
 -------------------------------------------------- */
 * { padding: 0; margin: 0; font-family: 'Ubuntu', sans-serif; }
-h1, .h1 { font-size: 4.8rem; }
-h2, .h2 { font-size: 3.2rem; }
-h3, .h3 { font-size: 2rem; }
-section { width: 100%; padding: 80px 0; }
+h1, .h1 { font-size: 4rem; }
+h2, .h2 { font-size: 2rem; }
+h3, .h3 { font-size: 1.75rem; }
+h4, .h4 { font-size: 1.5rem; }
+section { width: 100%; padding: 50px 0; }
+.page { width: 100%; height: 100%; }
+.row { padding-left: 60px; }
 
-
-/* NAVBAR
+/* HEADER & NAVBAR
 -------------------------------------------------- */
+header { background-color: rgba(0, 0, 0, 0.2); position: fixed; top: 0; left: 0; width: 60px; height: 100%; box-shadow: 5px 0 15px rgba(24, 24, 24, 0.5); z-index: 100; }
+.navbar { padding: 0; margin: 0; list-style: none; }
+.navbar .navbar-item { float: left; }
+.navbar .navbar-link { display: inline-block; width: 60px; height: 60px; }
+.navbar .navbar-link .icomoon { display: block; width: 60px; font-size: 2rem; text-align: center; line-height: 60px; color: #ffffff; }
+.navbar .navbar-link .navbar-name { display: none; float: right; background: #fffc19; height: 60px; margin-top: -60px; margin-left: 60px; padding: 0 30px; font-size: 1.2rem; line-height: 60px; color: #181818; }
+.navbar .navbar-link:hover { width: auto; text-decoration: none; box-shadow: 5px 0 15px rgba(24, 24, 24, 0.5); }
+.navbar .navbar-link:hover .icomoon { background: #fffc19; color: #181818; }
+.navbar .navbar-link:hover .navbar-name { display: inline-block; }
+
 
 /* CAROUSEL
 -------------------------------------------------- */
-.cover { height: 480px; }
-.site-title { display: block; position: absolute; top: 0; width: 100%; padding-top: 200px; text-align: center; z-index: 15; }
-.cover-inner .item { height: 480px; background-color: #777; }
-.cover-inner .cover-caption { text-align: left; color: #ffffff; z-index: 10; }
-.cover-inner > .item > img { position: absolute; top: 0; left: 0; min-width: 100%; height: 480px; }
+.cover { background: #999999; height: 600px; }
+.site-title { display: block; position: absolute; top: 0; width: 100%; padding-top: 240px; text-align: center; z-index: 15; }
+.cover-inner .carousel-item { height: 600px; background-color: #777; }
+.cover-inner .cover-caption { text-align: left; text-shadow: 0 2px 1px rgba(24, 24, 24, 0.7); color: #ffffff; z-index: 10; }
+.cover-inner > .carousel-item > img { position: absolute; top: 0; left: 0; min-width: 100%; height: 600px; }
+ /* Carousel Off */
+.carousel-indicators, .carousel-inner { display: none; }
 
 
 /* INDEX MESSAGE
 -------------------------------------------------- */
 .index-message { font-style: italic; text-align: center; }
 .intro { background: #ffffff; }
-.intro p { font-family: 'Satisfy', cursive; font-size: 2.4rem; line-height: 1.6; letter-spacing: 0.05rem; }
-.phrases { background: #333333; }
+.intro p { font-family: 'Satisfy', cursive; font-size: 1.6rem; line-height: 1.6; letter-spacing: 0.05rem; color: #181818; }
 
 
 /* INDEX PROJECTS
 -------------------------------------------------- */
-.projects {	background: #cccccc; padding: 0; }
-.projects-indicators { position: relative; top: 0; }
-.projects-indicators li { display: block; }
-.projects-indicators .active { background-color: #ffffff; width: 12px; height: 12px; margin: 0; }
+.projects { background: #ffffff; padding: 0; }
+.projects-parallax { background-image: url("../img/parallax-index.jpg") ;background-position: center; background-attachment: fixed; width: 100%; height: 360px; }
+.card-columns { padding: 60px 0 60px 60px; }
+@media screen and (max-width: 960px) {
+	.card-columns { column-count: 2; }
+}
+@media screen and (max-width: 540px) {
+	.card-columns { column-count: 1; }
+}
+.card { background: #181818; margin-top: 100px; border: none; border-radius: 0; color: #ffffff !important; opacity: 0; }
+.card .card-icon { background-color: #ffffff; position: absolute; top: 0; left: 0; width: 45px; height: 45px; font-size: 2rem; text-align: center; line-height: 45px; color: #181818; }
+.card .card-img-top { border-radius: 0; }
+.card .card-title { font-weight: 700; }
+.card .card-text { margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 300; line-height: 1.5; }
+.card .card-link { font-size: 1rem; text-decoration: none; color: #ffffff; }
+.card .card-link:hover { text-decoration: underline; color: #fffc19; }
 
 
-.projects .item { height: 480px; background-color: #777; }
-.projects-inner > .item > img {	position: absolute; top: 0; left: 0; min-width: 100%; height: 500px; }
+/* INDEX ABOUT US
+-------------------------------------------------- */
+.about-us { background: #484848; }
+
+
+/* FOOTER
+-------------------------------------------------- */
+footer { background: #181818; padding: 15px 0; font-size: 0.8rem; text-align: center; color: #ffffff; }
