@@ -1,13 +1,12 @@
 /* PAGE STYLES
 -------------------------------------------------- */
 * { padding: 0; margin: 0; font-family: 'Ubuntu', sans-serif; }
-h1, .h1 { font-size: 4rem; }
-h2, .h2 { font-size: 2rem; }
-h3, .h3 { font-size: 1.75rem; }
+h1, .h1 { font-size: 4rem; font-family: 'Bree Serif', serif; }
+h2, .h2 { font-size: 2rem; font-family: 'Bree Serif', serif; }
+h3, .h3 { font-size: 1.75rem; font-family: 'Bree Serif', serif; }
 h4, .h4 { font-size: 1.5rem; }
-section { width: 100%; padding: 50px 0; overflow: hidden; }
-.page { width: 100%; height: 100% !important;margin: 0 auto; overflow: hidden; }
-.row { padding-left: 60px; }
+section { width: 100%; padding: 60px 0; overflow: hidden; }
+.page { width: 100%; height: 100% !important; margin: 0 auto; overflow: hidden; }
 
 /* HEADER & NAVBAR
 -------------------------------------------------- */
@@ -33,38 +32,26 @@ header .logo { position: absolute; left: 80px; height: 60px; }
 .carousel-indicators, .carousel-inner { display: none; }
 
 
-/* INDEX MESSAGE
--------------------------------------------------- */
-.index-message { font-style: italic; text-align: center; }
-.intro { background: #ffffff; }
-.intro p { font-family: 'Satisfy', cursive; font-size: 1.6rem; line-height: 1.6; letter-spacing: 0.05rem; color: #181818; }
-
-
 /* INDEX PROJECTS
 -------------------------------------------------- */
-.projects { background: #ffffff; padding: 0; }
-.projects-parallax { background-image: url("../img/parallax-index.jpg") ;background-position: center; background-attachment: fixed; width: 100%; height: 360px; }
-.card-columns { padding: 60px 0 60px 60px; }
-@media screen and (max-width: 960px) {
-	.card-columns { column-count: 2; }
-}
-@media screen and (max-width: 540px) {
-	.card-columns { column-count: 1; }
-}
-.card { background: #181818; margin-top: 100px; border: none; border-radius: 0; color: #ffffff !important; }
-.card .card-icon { background-color: #ffffff; position: absolute; top: 0; left: 0; width: 45px; height: 45px; font-size: 2rem; text-align: center; line-height: 45px; color: #181818; }
-.card .card-img-top { border-radius: 0; }
-.card .card-title { font-weight: 700; }
-.card .card-text { margin-bottom: 0.5rem; font-size: 0.9rem; font-weight: 300; line-height: 1.5; }
-.card .card-link { font-size: 1rem; text-decoration: none; color: #ffffff; }
-.card .card-link:hover { text-decoration: underline; color: #fffc19; }
+.works { background: #ffffff; padding: 0; }
+.work-card { background-position: center center; background-size: cover; height: 100%; padding: 0; }
+.card-1 { background-image: url(""); }
+.card-2 { background-image: url("../img/fortalezareal-04.jpg"); }
+.card-3 { background-image: url(""); }
+.card-4 { background-image: url("../img/pagoefectivo.jpg"); }
+.work-card .card-block { background: rgba(0, 0, 0, 0.7); position: absolute; bottom: 0; width: 100%; height: auto; padding: 30px 15px; text-align: center; color: #ffffff !important; }
+.work-card .card-block .card-icon { display: block; margin-bottom: 0.5rem; font-size: 2rem; color: #ffffff; }
+.work-card .card-block .card-text { display: none; padding: 0 40px; margin-bottom: 1rem; font-size: 0.9rem; font-weight: 300; line-height: 1.5; }
+.work-card .card-block .card-link { padding: 5px 15px; font-size: 1rem; text-decoration: none; color: #ffffff; }
+.work-card:hover .card-block .card-link { border: 1px solid #ffffff; }
 
 
 /* INDEX ABOUT US
 -------------------------------------------------- */
-.about-us { background: #484848; }
+.projects { background: #484848; color: #ffffff; }
 
 
 /* FOOTER
 -------------------------------------------------- */
-footer { background: #181818; padding: 15px 0; font-size: 0.8rem; text-align: center; color: #ffffff; }
+.footer { background: #181818; padding: 15px 0; font-size: 0.8rem; text-align: center; color: #ffffff; }
