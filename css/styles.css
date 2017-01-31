@@ -6,6 +6,7 @@ h2, .h2 { font-size: 2rem; font-family: 'Bree Serif', serif; }
 h3, .h3 { font-size: 1.75rem; font-family: 'Bree Serif', serif; }
 h4, .h4 { font-size: 1.5rem; }
 section { width: 100%; padding: 60px 0; overflow: hidden; }
+ul { padding: 0; margin: 0; list-style: none; clear: both; }
 .page { width: 100%; height: 100% !important; margin: 0 auto; overflow: hidden; }
 
 /* HEADER & NAVBAR
@@ -15,7 +16,7 @@ header .logo { position: absolute; left: 80px; height: 60px; }
 .navbar { position: absolute; right: 80px; height: 60px; padding: 0; margin: 0; list-style: none; }
 .navbar .navbar-item { float: left; padding: 0 20px; }
 .navbar .navbar-link { display: inline-block; height: 60px; text-align: center; text-decoration: none; box-shadow: 0; }
-.navbar .navbar-link .icomoon { display: none; background: transparent; width: 60px; font-size: 2rem; line-height: 60px; color: #ffffff; z-index: 2; }
+.navbar .navbar-link .icomoon { display: none; background: transparent; width: 60px; font-size: 2rem; line-height: 60px; color: #f8f8f8; z-index: 2; }
 .navbar .navbar-link .navbar-name { display: inline-block; font-size: 0.9rem; line-height: 60px; color: #181818; z-index: 1; }
 .navbar .navbar-link:hover .navbar-name { text-decoration: underline; }
 
@@ -23,16 +24,24 @@ header .logo { position: absolute; left: 80px; height: 60px; }
 
 /* CAROUSEL
 -------------------------------------------------- */
-.cover { background: #999999; }
+.cover { background: #989898; }
 .site-title { display: block; position: absolute; top: 40%; width: 100%; text-align: center; z-index: 15; }
 .cover-inner .carousel-item { height: 600px; background-color: #777; }
-.cover-inner .cover-caption { text-align: left; text-shadow: 0 2px 1px rgba(24, 24, 24, 0.7); color: #ffffff; z-index: 10; }
+.cover-inner .cover-caption { text-align: left; text-shadow: 0 2px 1px rgba(24, 24, 24, 0.7); color: #f8f8f8; z-index: 10; }
 .cover-inner > .carousel-item > img { position: absolute; top: 0; left: 0; min-width: 100%; height: 600px; }
  /* Carousel Off */
 .carousel-indicators, .carousel-inner { display: none; }
 
 
-/* INDEX PROJECTS
+/* INDEX WORKS
+-------------------------------------------------- */
+.services { padding: 0; }
+.services .container, .services .row { height: 100%; }
+.services .service-card { background: #ffffff; height: 30%; margin-top: 30%; text-align: center; }
+.services .service-card:hover { animation: animate-serviceCard 0.7s linear forwards; -webkit- animation: animate-serviceCard 0.7s linear forwards; }
+
+
+/* INDEX WORKS
 -------------------------------------------------- */
 .works { background: #ffffff; padding: 0; }
 .work-card { background-position: center center; background-size: cover; height: 100%; padding: 0; }
@@ -42,16 +51,50 @@ header .logo { position: absolute; left: 80px; height: 60px; }
 .card-4 { background-image: url("../img/pagoefectivo.jpg"); }
 .work-card .card-block { background: rgba(0, 0, 0, 0.7); position: absolute; bottom: 0; width: 100%; height: auto; padding: 30px 15px; text-align: center; color: #ffffff !important; }
 .work-card .card-block .card-icon { display: block; margin-bottom: 0.5rem; font-size: 2rem; color: #ffffff; }
-.work-card .card-block .card-text { display: none; padding: 0 40px; margin-bottom: 1rem; font-size: 0.9rem; font-weight: 300; line-height: 1.5; }
+.work-card .card-block .card-text { padding: 0 40px; margin-top: -6rem; margin-bottom: 1rem; font-size: 0.9rem; font-weight: 300; line-height: 1.5; opacity: 0; }
 .work-card .card-block .card-link { padding: 5px 15px; font-size: 1rem; text-decoration: none; color: #ffffff; }
-.work-card:hover .card-block .card-link { border: 1px solid #ffffff; }
+.work-card:hover .card-block .card-text { animation: animate-workCard 1.2s linear forwards; -webkit- animation: animate-workCard 1.2s linear forwards; }
+.work-card:hover .card-block .card-link { background: #cc0000; color: #ffffff; box-shadow: 3px 3px 0 #990000; }
 
 
-/* INDEX ABOUT US
+/* INDEX PROJECTS
 -------------------------------------------------- */
-.projects { background: #484848; color: #ffffff; }
+.projects { background: #484848; padding: 0; color: #ffffff; }
+.projects .container, .projects .row { height: 100%; }
+.projects .project-card { height: 40%; margin-top: 30%; }
 
 
 /* FOOTER
 -------------------------------------------------- */
-.footer { background: #181818; padding: 15px 0; font-size: 0.8rem; text-align: center; color: #ffffff; }
+.footer { background: #181818; padding: 12% 0; color: #ffffff; }
+.footer .footer-form { margin-bottom: 120px; }
+.footer .footer-form h3 { margin-bottom: 40px; text-align: center; }
+.footer .footer-form p, .footer .footer-info p { font-weight: 300; text-align: center; color: #ffffff; }
+.footer .footer-form p { font-size: 1.4rem; line-height: 2.5; }
+.footer .footer-form input[type=text], .footer .footer-form input[type=tel], .footer .footer-form input[type=email] { display: inline-block; background: none; height: 40px; padding: 0 15px; margin: 0 5px; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid #cccccc; text-align: center; line-height: 40px; color: #cccccc; }
+.footer .footer-form input[type=tel] { width: 160px; }
+.footer .footer-form input[type=email] { width: 320px; }
+.footer .footer-form input[type="submit"] { background: #cc0000; display: block; padding: 10px 20px; margin: 40px auto 0; border: none; font-size: 1.4rem; font-weight: 400; text-align: center; color: #ffffff; box-shadow: 4px 4px 0 #990000; }
+.footer .footer-form input[type="submit"]:hover { background: #265a88; box-shadow: 4px 4px 0 #13436d; }
+.footer .footer-info { padding-top: 80px; border-top: 1px solid #686868; }
+.footer .footer-info p { font-size: 0.9rem; line-height: 1.8; color: #c8c8c8; }
+
+
+@keyframes animate-serviceCard {
+	0% { border: 0px solid #cccccc; box-shadow: 0 0 0 rgba(204, 204, 204, 0); }
+	100% { border: 1px solid #cccccc; box-shadow: 6px 6px 0 rgba(204, 204, 204, 1); }
+}
+@-webkit-keyframes animate-serviceCard {
+	0% { border: 0px solid #cccccc; box-shadow: 0 0 0 rgba(204, 204, 204, 0); }
+	100% { border: 1px solid #cccccc; box-shadow: 6px 6px 0 rgba(204, 204, 204, 1); }
+}
+@keyframes animate-workCard {
+	0% { margin-top: -6rem; opacity: 0; }
+	40% { margin-top: 0rem; }
+	100% { margin-top: 0rem; opacity: 1; }
+}
+@-webkit-keyframes animate-workCard {
+	0% { margin-top: -6rem; opacity: 0; }
+	40% { margin-top: 0rem; }
+	100% { margin-top: 0rem; opacity: 1; }
+}
